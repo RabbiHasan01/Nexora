@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nexora</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hero">
+<div>
+<h1>NEXORA</h1>
+<p>A Strategic Connection Game</p>
+</div>
+<div class="badge">AI LEVEL 2</div>
+</header>
+
+<main class="grid">
+<section class="panel">
+<h2>Board</h2>
+<div id="board" class="board">
+<p>37-node board will be rendered here by board.js</p>
+</div>
+<div class="controls">
+<button id="newGame">New Game</button>
+<button id="undo">Undo</button>
+<button id="aiMove">AI Move</button>
+</div>
+</section>
+
+<aside class="panel">
+<h2>Status</h2>
+<p><strong>Turn:</strong> <span id="turn">Green</span></p>
+<p><strong>Winner:</strong> <span id="winner">None</span></p>
+<h3>Rules</h3>
+<ol>
+<li>Players alternate placing one piece.</li>
+<li>Pieces never move.</li>
+<li>Connect your two bases to win.</li>
+</ol>
+</aside>
+</main>
+
+<footer>
+<p>Nexora &copy; 2026</p>
+</footer>
+
+<script src="js/board.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
